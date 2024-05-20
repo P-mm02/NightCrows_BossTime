@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Tailwind CSS Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .aquamarineBorder{
+            border: 2px solid aquamarine ;            
+        }
+        .borderRadius10px{
+            border-radius: 10px;
+        }
+        td,th{
+            border: 1px solid #E5E7EB;
+        }
+    </style>
+</head>
+<body class="bg-black">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white flex flex-col items-between justify-center">
+        <div class="flex items-center justify-center aquamarineBorder" style="border-bottom: none;">
+            <h1 class="text-md font-bold">Power By เจ้าวีน้อย(W) ------ Please donate for future development, any amount will do.</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">            
+            <div class="flex items-center justify-center aquamarineBorder">
+                <span class="text-md font-bold mr-2">WEMIX Chain :</span>
+                <a href="" class="text-md font-bold">0xd46159091f6c1af7a4cb21a2ff732b40b356068a</a>
+            </div>
+            <div class="flex items-center justify-center aquamarineBorder">
+                <span class="text-md font-bold mr-2">BNB Chain :</span>
+                <a href="" class="text-md font-bold">0x5a650B7f08606afE6241B841b9c2F3262a77A5dB</a>
+            </div>                          
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="flex items-center ml-10 py-2">
+                <img src="/public/img/Logo.png" alt="" srcset="" class="w-24 h-24 rounded-full object-cover">                
+            </div>
+            <div class="flex items-center">
+                <h1 class="text-4xl font-bold">Night Crows Boos Times</h1>
+            </div>
+            <div class="flex flex-col items-end justify-center mr-5">                
+                <form action="" method="post " class="w-full max-w-md ">
+                    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="mb-4 flex flex-col items-end justify-center">
+                            <label for="username" class="block text-gray-300 text-sm font-bold mb-2">Username</label>
+                            <input type="text" id="username" name="username" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your username">
+                        </div>
+                        <div class="mb-4 flex flex-col items-end justify-center">
+                            <label for="password" class="block text-gray-300 text-sm font-bold mb-2">Password</label>
+                            <input type="password" id="password" name="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Enter your password">
+                        </div>                    
+                        <div class="mb-4 flex flex-col items-end justify-center">
+                            <label for="submitLogin" class="block text-gray-300 text-sm font-bold mb-2">Only admin</label>
+                            <button id="submitLogin" type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+                        </div> 
+                    </div>                                      
+                </form>
+            </div>           
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section with Background Image h-screen-->
+    <section class="flex flex-col h-screen items-center justify-start bg-cover" style="background-image: url('/public/img/Logo.png')">
+        <div class="text-center text-white text-xl mt-10 bg-gray-800 bg-opacity-90">
+            <table class="min-w-full border border-gray-200">
+                <thead>
+                    <tr>
+                        <th class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Boss</th>
+                        <th class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Respawn(UTC+7)</th>
+                        <th class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Cooldown</th>
+                        <th class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Queue</th>
+                        <th class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">SetTime</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 1, Col 1</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 1, Col 2</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 1, Col 3</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 1, Col 4</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 1, Col 5</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 1</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 2</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 3</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 4</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 5</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 1</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 2</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 3</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 4</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 5</td>
+                    </tr><tr>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 1</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 2</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 3</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 4</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 5</td>
+                    </tr><tr>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 1</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 2</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 3</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 4</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 5</td>
+                    </tr><tr>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 1</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 2</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 3</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 4</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 5</td>
+                    </tr><tr>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 1</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 2</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 3</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 4</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 5</td>
+                    </tr><tr>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 1</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 2</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 3</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 4</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 5</td>
+                    </tr><tr>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 1</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 2</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 3</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 4</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 2, Col 5</td>
+                    </tr>
+                    <tr>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 10, Col 1</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 10, Col 2</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 10, Col 3</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 10, Col 4</td>
+                        <td class="py-4 sm:px-8 md:px-12 lg:px-16 2xl:px-32 border-b border-gray-200">Row 10, Col 5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Key Features</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Responsive</h3>
+                    <p>Automatically adjust styles based on screen size.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Customizable</h3>
+                    <p>Configure Tailwind CSS to match your project's design requirements.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Utility-first</h3>
+                    <p>Compose designs by applying pre-defined utility classes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
